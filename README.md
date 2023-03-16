@@ -4,23 +4,23 @@ Features:
 
     Play/Pause Song
   
-  View/play songs in your playlist
+    View/play songs in your playlist
   
-  View song lyrics
+    View song lyrics
   
-  Generate recommendations based on songs in your playlist
+    Generate recommendations based on songs in your playlist
   
 Built Using:
 
-  PyQt6
+    PyQt6
   
-  Spotify API
+    Spotify API
   
-  Genuis Lyrics API
+    Genuis Lyrics API
   
 Recommendation Model built using:
 
-  TF-IDF Vectorizer
+    TF-IDF Vectorizer
   
-  Cosine Similarity
+    Cosine Similarity
   
