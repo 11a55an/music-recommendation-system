@@ -2,7 +2,7 @@
 
 Features:
 
-  Play/Pause Song
+    Play/Pause Song
   
   View/play songs in your playlist
   
