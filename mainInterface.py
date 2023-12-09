@@ -28,7 +28,7 @@ class Ui_MainWindow(object):
 
         # Authorization
         scope = 'user-read-private user-library-read user-read-playback-state user-modify-playback-state user-top-read playlist-modify-private playlist-modify-public'
-        token = util.prompt_for_user_token(scope=scope, client_id='CLIENT_ID',client_secret='CLIENT_SECRET', redirect_uri='REDIRECT_URI')
+        token = util.prompt_for_user_token(scope=scope, client_id='#CLIENTID',client_secret='#CLIENTSECRET', redirect_uri='#REDIRECTURI')
         self.sp = spotipy.Spotify(auth=token,requests_timeout=10, retries=10)
 
         # Main interface
@@ -267,7 +267,7 @@ class Ui_MainWindow(object):
         self.dateAddedInfo.setMinimumSize(QtCore.QSize(70, 40))
         self.horizontalLayout_27.addWidget(self.dateAddedInfo)
         self.trackHome=[]
-        play = self.sp.playlist_tracks("PLAYLIST_ID")
+        play = self.sp.playlist_tracks("6cClnm3FshurLsXWBrd0kB")
         playItem = play["items"] #Get songs in the playlist
         for self.i in range(7):
             self.trackHome.append(self.i)
@@ -532,9 +532,9 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.verticalLayout_12.addWidget(self.scrollArea)
         try:
-            play = self.sp.playlist_tracks("PLAYLIST_ID") # Get Playlist
+            play = self.sp.playlist_tracks("6xCEyZll8DECLNx2rlfvYG") # Get Playlist
         except requests.ReadTimeout:
-            play = self.sp.playlist_tracks("PLAYLIST_ID") # Get Playlist
+            play = self.sp.playlist_tracks("6xCEyZll8DECLNx2rlfvYG") # Get Playlist
         playItem = play["items"] #Get songs in the playlist
         self.items = len(playItem) #Get total number of songs
         font = QtGui.QFont()

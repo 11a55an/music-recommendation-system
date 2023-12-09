@@ -31,7 +31,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # Authorization
         scope = 'user-read-private user-library-read user-read-playback-state user-modify-playback-state user-top-read playlist-modify-private playlist-modify-public'
-        token = util.prompt_for_user_token(scope=scope, client_id='CLIENT_ID',client_secret='CLIENT_SECRET', redirect_uri='REDIRECT_URI')
+        token = util.prompt_for_user_token(scope=scope, client_id='#CLIENTID',client_secret='#CLIENTSECRET', redirect_uri='#REDIRECTURI')
         self.sp = spotipy.Spotify(auth=token,requests_timeout=10, retries=10)
         self.sp.trace = False
         self.genius = lg.Genius(access_token="ACESS_TOKEN")
